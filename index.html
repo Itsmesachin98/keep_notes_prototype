@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notes</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="icon-container">
+                <img src="images/keep_icon.png" alt="" />
+            </div>
+            <h1>Keep</h1>
+            <div class="search-box">
+                <div class="search-icon-container">
+                    <label for="search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+                <input id="search-input" type="text" placeholder="Search" />
+            </div>
+        </header>
+        <main class="main">
+            <section class="pane left-pane">
+                <div class="category-container">
+                    <div class="all-icon-container">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <span>Notes</span>
+                </div>
+                <div class="category-container">
+                    <div class="all-icon-container">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <span>Reminders</span>
+                </div>
+                <div class="category-container">
+                    <div class="all-icon-container">
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <span>Edit Labels</span>
+                </div>
+                <div class="category-container">
+                    <div class="all-icon-container">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <span>Archive</span>
+                </div>
+                <div class="category-container">
+                    <div class="all-icon-container">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                    <span>Trash</span>
+                </div>
+            </section>
+            <section class="right-pane">
+                <div class="add-notes">
+                    <div class="note-box">
+                        <div
+                            class="note"
+                            placeholder="Type here..."
+                            contenteditable
+                        ></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script
+            src="https://kit.fontawesome.com/0613a24a02.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>
