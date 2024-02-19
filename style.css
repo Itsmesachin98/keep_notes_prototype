@@ -24,6 +24,23 @@ h1 {
     margin-right: 4rem;
 }
 
+h1,
+h3,
+p {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+h3 {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
 span {
     color: #fff;
     font-family: "Poppins", sans-serif;
@@ -123,8 +140,7 @@ input:focus {
 
 .right-pane {
     width: 100%;
-    padding-top: 1rem;
-    padding-right: 2rem;
+    padding: 1rem 4rem;
     display: flex;
     flex-direction: column;
 }
@@ -132,13 +148,13 @@ input:focus {
 .add-notes {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .note-box {
     width: 32rem;
     border-radius: 0.25rem;
     border: 1px solid white;
-    /* padding: 0.5rem 1rem; */
     display: flex;
     flex-direction: column;
 }
@@ -155,7 +171,9 @@ input:focus {
 }
 
 .note-text:focus,
-.title-text:focus {
+.title-text:focus,
+.title:focus,
+.note:focus {
     outline: none;
 }
 
@@ -183,6 +201,58 @@ input:focus {
 
 .close-button:hover {
     cursor: pointer;
+}
+
+.store-notes {
+    width: 100%;
+}
+
+.card {
+    width: 14rem;
+    height: 8rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: width 0.2s linear, height 0.2s linear;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-note-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.title,
+.note {
+    max-height: 5rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.5rem;
+    overflow-y: hidden;
+}
+
+.title {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.note {
+    font-size: 0.75rem;
+}
+
+.maximize {
+    width: 28rem;
+    height: 16rem;
+    transition: width 0.2s linear, height 0.2s linear;
 }
 
 /* .note {
